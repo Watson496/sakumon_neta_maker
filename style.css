@@ -78,7 +78,7 @@ main {
 }
 
 .button {
-	appearance:none;
+	-webkit-appearance:none;
 	display: inline block;
 	width: 90px;
 	height: 44px;
