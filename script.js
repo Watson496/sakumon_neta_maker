@@ -88,7 +88,9 @@ function button_click() {
 		+ "・" + fetched_categories[2]
 		+ "\nで問題を作ってください。"
 	var encoded_result_str = encodeURI(result_str_for_uri);
-	var tweetlink_url = "https://twitter.com/intent/tweet?text=" + encoded_result_str + "&hashtags=作問ネタメーカー";
+	var tweetlink_url = "https://twitter.com/intent/tweet?text=" + encoded_result_str
+		+ "&url=" + location.href
+		+ "&hashtags=作問ネタメーカー";
 	var a_twitter = document.getElementById("a_twitter");
 	a_twitter.href = tweetlink_url;
 	
