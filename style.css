@@ -12,20 +12,14 @@ body {
 	height: 100%;
 }
 
+
+/* header関連ここから */
 header {
 	height: 48px;
 	background-color: #666666;
 	display: block;
 }
 
-footer {
-	height: 60px;
-	background-color: #666666;
-	display: block;	
-}
-
-
-/* header関連ここから */
 .header-wrap {
 	margin-left: auto;
 	margin-right: auto;
@@ -40,12 +34,12 @@ footer {
 	float: right;
 }
 
+
+/* main関連ここから */
 main {
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
 }
 
-
-/* main関連ここから */
 .main-wrap {
 	margin-left: auto;
 	margin-right: auto;
@@ -203,24 +197,23 @@ main {
 	color: #000000;
 }
 
-.space5 {height: 100px;}
+.space5 {
+	min-height: 100px;
+}
 
 
 /* footer関連ここから */
+footer {
+	min-height: 100px;
+	background-color: #666666;
+	display: block;
+	bottom: -100px;
+}
 
 .footer-wrap {
 	text-align: center;
 }
 
-
-/* テスト用 */
-.test {
-	width: 160px;
-	height: 40px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 15px;
-}
 
 /*　レスポンシブデザイン対応 */
 @media (min-width: 768px) {

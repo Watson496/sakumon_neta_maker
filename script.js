@@ -101,8 +101,4 @@ function button_click() {
 	*/
 }
 
-function test() {
-	document.getElementById("target").value = "test";
-}
-
 window.onload = getJSON();
