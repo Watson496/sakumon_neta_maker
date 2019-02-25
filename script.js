@@ -92,12 +92,13 @@ function button_click() {
 	var a_twitter = document.getElementById("a_twitter");
 	a_twitter.href = tweetlink_url;
 	
+	/*
 	// コピペ用のエリアを表示
 	var forcopy_block = document.getElementById("forcopy_block");
 	forcopy_block.style.display = "block";
-	var forcopy_textarea = document.getElementById("forcopy_textarea").value
-	forcopy_textarea = "test";
-	
+	var forcopy_textarea = document.getElementById("forcopy_textarea")
+	forcopy_textarea.value = "test";
+	*/
 }
 
 function test() {
