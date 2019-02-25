@@ -1,0 +1,84 @@
+ <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>作問ネタメーカー</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<div class="header-wrap">
+			<div class="pull-left">
+				<img class="pull-left" src="images/logo.png" alt="作問ネタメーカー">
+			</div>
+		</div>
+	</header>
+	
+	<main>
+		<div class="main-wrap">
+			<div class="space1"></div>
+			<div class="shindantitle_block">
+				<div class="shindantitle">
+						<h1>作問ネタメーカー</h1>
+					</div>
+				<div class="shindandescription">
+						<span>
+							このキーワードをもとに作問してください。
+						</span>
+					</div>
+			</div>
+			<div class="space2"></div>
+			<div class="shindanform_block">
+				<div class="shindanform_label">
+					名前を入れてください
+				</div>
+				<form id="form" name="enter">
+					<input id = "input" class="input" type="text" maxlength="255" value="アラン・スミシー">
+					<input id="shindan_submit" type="button" class="button" onClick="button_click()" value="作成する">
+				</form>
+			</div>
+			<div class="space3"></div>
+			<div id="shindanresult_block" class="shindanresult_block">
+				<div class="shindanresult_title">結果</div>
+				<div id="shindanresult" class="shindanresult_main"></div>
+			</div>
+			<div class="space4"></div>
+			<div id="tweetform_block" class="tweetform_block">
+				<div class="tweetform_title">
+					結果をつぶやこう！
+				</div>
+				<div class="tweetform">
+					<a id="a_twitter" href="https://twitter.com/intetnt/tweet">
+						<span class="share_twitter">
+							<i class="twitter_logo"></i>
+							ツイート
+						</span>
+					</a>
+				</div>
+			</div>
+			<div id="forcopy_block" class="forcopy_block">
+				<div class="forcopy_tab">コピペ用</div>
+				<div class="forcopy_panel">
+					<form id="forcopy" name="forcopy">
+						<texttarea  id="forcopy_textarea" class="forcopy_textarea" value="test"></texttarea>
+					</form>
+				</div>
+			</div>
+			<div class="space5"></div>
+			<!-- テスト用 -->
+			<div class="test">
+				<textarea id="target"></textarea>
+				<input type=button onClick="test()" value="button">
+			</div>
+		</div>
+	</main>
+	
+	<footer>
+		<div class="footer-wrap"></div>
+	</footer>
+	
+	<script src="script.js" type="text/javascript"></script>
+	
+</body>
+</html>
