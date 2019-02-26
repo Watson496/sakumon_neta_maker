@@ -85,12 +85,13 @@ function button_click() {
 	result_str_for_uri = username + "さんは\n"
 		+ "・" + fetched_categories[0] + "\n"
 		+ "・" + fetched_categories[1] + "\n"
-		+ "・" + fetched_categories[2]
-		+ "\nで問題を作ってください。"
+		+ "・" + fetched_categories[2] + "\n"
+		+ "\nで問題を作ってください。" + "\n"
 	var encoded_result_str = encodeURI(result_str_for_uri);
+	var hashtag = "作問ネタメーカー"
+	var encoded_hashtag = encodeURI(hashtag)
 	var tweetlink_url = "https://twitter.com/intent/tweet?text=" + encoded_result_str
-		+ "&url=" + location.href
-		+ "&hashtags=作問ネタメーカー";
+		+ "%23" + encoded_hashtag + "%0a" + location.href;
 	var a_twitter = document.getElementById("a_twitter");
 	a_twitter.href = tweetlink_url;
 	
