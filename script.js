@@ -52,8 +52,9 @@ function button_click() {
 	var year = date_today.getFullYear();
 	var month = date_today.getMonth()+1;
 	var day = date_today.getDate();
+	var hours = date_today.getHours();
 	
-	var seed = charcode_username + year + month + day;
+	var seed = charcode_username + year + month + day + hours;
 	
 	// 乱数を生成して3つのカテゴリーを抽出
 	const random = new Random(seed);
