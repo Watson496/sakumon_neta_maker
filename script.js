@@ -82,7 +82,7 @@ function button_click() {
 	var tweetform_block = document.getElementById("tweetform_block");
 	tweetform_block.style.display = "block";
 	
-	result_str_for_uri = username + "さんは\n"
+	result_str_for_uri = username + "さんは\n" + "\n"
 		+ "・" + fetched_categories[0] + "\n"
 		+ "・" + fetched_categories[1] + "\n"
 		+ "・" + fetched_categories[2] + "\n"

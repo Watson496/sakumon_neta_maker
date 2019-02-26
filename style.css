@@ -201,6 +201,13 @@ main {
 	min-height: 100px;
 }
 
+/* shindanmaker */
+.shindanmaker {
+	text-align: center;
+	font: inherit;
+}
+
+.space6 {height: 100px;}
 
 /* footer関連ここから */
 footer {
